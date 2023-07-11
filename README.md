@@ -1,9 +1,9 @@
-## CardDemo -- Mainframe CardDemo Application
+## CardDemo -- IBM i CardDemo Application
 
-- [CardDemo -- Mainframe CardDemo Application](#carddemo----mainframe-card-demo-application)
+- [CardDemo -- IBM i CardDemo Application](#carddemo----ibm-i-card-demo-application)
 - [Description](#description)
 - [Technologies used](#technologies-used)
-- [Installation on the mainframe](#installation-on-the-mainframe)
+- [Installation on the IBM i](#installation-on-the-ibm-i)
 - [Application Details](#application-details)
   - [User Functions](#user-functions)
   - [Admin Functions](#admin-functions)
@@ -23,9 +23,9 @@
 <br/>
 
 ## Description
-CardDemo is a Mainframe application designed and developed to test and showcase AWS and partner technology for mainframe migration and modernization use-cases such as discovery, migration, modernization, performance test, augmentation, service enablement, service extraction, test creation, test harness, etc.
+CardDemo is an IBM i application designed and developed to test and showcase AWS and partner technology for IBM i migration and modernization use-cases such as discovery, migration, modernization, performance test, augmentation, service enablement, service extraction, test creation, test harness, etc.
 
-Note that the intent of this application is to provide mainframe coding scenarios to excercise analysis, transformation and migration tooling. So, the coding style is not uniform across the application
+Note that the intent of this application is to provide IBM i coding scenarios to excercise analysis, transformation and migration tooling. So, the coding style is not uniform across the application
 
 <br/>
 
@@ -38,17 +38,17 @@ Note that the intent of this application is to provide mainframe coding scenario
 
 <br/>
 
-## Installation on the mainframe 
+## Installation on the IBM i 
 
-To install this repository on the mainframe please follow the following steps
+To install this repository on the IBM i please follow the following steps
 
 1. Clone this repository to your local development environment
 
-2. Create datasets on the mainframe  hold the code
+2. Create datasets on the IBM i  hold the code
    * It is recommended to group them under a High Level Qualifier (HLQ)for all your datasets. 
-   * Upload the following application source folders from the main branch of git repository on to your mainframe
+   * Upload the following application source folders from the main branch of git repository on to your IBM i
       using $INDFILE or your preferred upload tool.
-   * If you have used AWS.M2 as your HLQ, you should end up with the below code structure on the mainframe
+   * If you have used AWS.M2 as your HLQ, you should end up with the below code structure on the IBM i
    
       | HLQ    | Name          | Format | Length |
       | :----- | :------------ | :----- | -----: |
@@ -62,7 +62,7 @@ To install this repository on the mainframe please follow the following steps
 
    ** Use the supplied sample data**
    
-      * Upload the sample data provided in the main/-/data/EBCDIC/ folder to the mainframe. Ensure that you use transfer mode binary
+      * Upload the sample data provided in the main/-/data/EBCDIC/ folder to the IBM i. Ensure that you use transfer mode binary
 
          | Dataset name                      | Name                                             | Copybook (Layout) | Format | Length | Name of equivalent ascii file |
          | :---------------------------------| :----------------------------------------------- | :-----            | :----- | -----: | :---------------------------- |
@@ -100,7 +100,7 @@ To install this repository on the mainframe please follow the following steps
 
 4. Compile the Programs. 
    
-   You should use the compile process followed by your mainframe shopfloor
+   You should use the compile process followed by your IBM i shopfloor
    
    We have however provided some sample JCLs in the samples folder in git to help you craft the JCL   
 
@@ -301,9 +301,9 @@ The following features are planned for upcoming releases
 
 ## Contributing
 
-We are looking forward to receiving contributions and enhancements to this initial codebase from the mainframe code base
+We are looking forward to receiving contributions and enhancements to this initial codebase from the IBM i code base
 
-Feel free to raise issues, create code and raise merge requests for enhancements so that we can build out this application as a resource for programmers wanting to understand and modernize their mainframes.
+Feel free to raise issues, create code and raise merge requests for enhancements so that we can build out this application as a resource for programmers wanting to understand and modernize their IBM i.
 
 <br/>
 
